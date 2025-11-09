@@ -2,7 +2,6 @@ from collections import deque
 from datetime import datetime
 import logging
 from typing import Dict, List, Optional
-import json
 
 
 class UserContextManager:
@@ -95,8 +94,6 @@ class UserContextManager:
             if inactivity_hours > hours:
                 del self.user_contexts[user_id]
                 pruned_count += 1
-                logging.info(
-                    f"🗑️ Удален контекст неактивного пользователя {user_id} (неактивность: {inactivity_hours:.1f} ч.)")
+                logging.info(f"🗑️ Удален контекст неактивного пользователя {user_id}")
 
         return pruned_count
-
