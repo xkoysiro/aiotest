@@ -1,0 +1,11 @@
+# OpenRouter settings
+OPENROUTER_API_KEY=your_key_here
+OPENROUTER_MODEL=your_model_here
+
+# Telegram settings
+TELEGRAM_TOKEN=your_token_here
+CHAT_ID=your_chat_id_for_logging_here
+
+# App settings
+MAX_CONTEXT_MESSAGES=your_value_here
+REQUEST_TIMEOUT=your_value_here
